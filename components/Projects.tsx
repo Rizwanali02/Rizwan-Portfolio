@@ -26,6 +26,16 @@ const projects = [
     featured: true,
   },
   {
+    title: "Chat App",
+    description:
+      "A real-time chat application that enables users to communicate instantly. Built with React.js and Socket.io for seamless messaging.",
+    image: "/imageChat.png",
+    technologies: ["React.js", "TailwindCSS", "Socket.io", "Node.js","Express"],
+    githubUrl: "https://github.com/Rizwanali02/chat-app-frontend",
+    liveUrl: "https://chat-app-nu-nine-37.vercel.app/",
+    featured: true,
+  },
+  {
     title: "Movix Web App",
     description:
       "A movie discovery and recommendation platform that provides users with detailed information about movies, including trailers, ratings, and reviews. Built with React.js and TailwindCSS for a seamless browsing experience.",
