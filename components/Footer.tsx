@@ -96,8 +96,8 @@ export default function Footer() {
 
           <div className="mt-8 pt-8 border-t border-border text-center">
             <p className="text-muted-foreground flex items-center justify-center">
-              © 2024 Rizwan Ali . Built with <Heart className="h-4 w-4 mx-1 text-red-500" /> using Next.js and
-              TailwindCSS.
+              © 2025 Rizwan Ali . Built with <Heart className="h-4 w-4 mx-1 text-red-500" /> using Next.js and
+              Shadcn/Ui.
             </p>
           </div>
         </div>

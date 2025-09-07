@@ -16,45 +16,46 @@ declare global {
 
 const projects = [
   {
+    title: "Tweeter Clone",
+    description:
+      "modern social media platform that allows users to post short messages, follow other users, and engage with content through likes and retweets. user can chat with each other in real-time.",
+    image: "/image-tweeter.png",
+    technologies: ["ReactJs", "Redux-Toolkit", "MongoDB", "Express", "NodeJs"],
+    githubUrl: "https://github.com/Rizwanali02/Twitter-Web-App",
+    liveUrl: "https://twitter-web-app-eight.vercel.app",
+    featured: true,
+  },
+  {
+    title: "Movix Web App",
+    description:
+      "A movie discovery and recommendation platform that provides users with detailed information about movies, including trailers, ratings, and reviews. Built with React.js and TailwindCSS for a seamless browsing experience.",
+    image: "/image.png",
+    technologies: ["React.js", "TailwindCSS"],
+    githubUrl: "https://github.com/Rizwanali02/Moviex_Web_App",
+    liveUrl: "https://themovixweb.netlify.app",
+    featured: true,
+  },
+  {
     title: "E-Commerce Platform",
     description:
-      "A full-stack e-commerce solution built with Next.js, featuring user authentication, payment processing, and admin dashboard. Includes real-time inventory management and order tracking.",
+      "A full-stack e-commerce solution built with React.js, featuring user authentication and admin dashboard.",
     image: "/modern-ecommerce-interface.png",
-    technologies: ["Next.js", "React", "Node.js", "MongoDB", "Stripe"],
-    githubUrl: "https://github.com/alexjohnson/ecommerce-platform",
-    liveUrl: "https://ecommerce-demo.vercel.app",
-    featured: true,
+    technologies: ["React", "Node.js", "MongoDB","Context API"],
+    githubUrl: "https://github.com/Rizwanali02/Laptop-Ecommerce",
+    liveUrl: "https://laptop-ecommerce-pink.vercel.app/",
+    featured: false,
   },
   {
-    title: "Task Management App",
+    title: "Blog web App",
     description:
-      "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Built with modern React patterns and WebSocket integration.",
+      "A modern blogging platform with rich text editing, SEO optimization, and social sharing features. Built with React.js and TailwindCSS for a sleek user experience.",
     image: "/task-management-dashboard.png",
-    technologies: ["React", "Express", "Socket.io", "PostgreSQL"],
-    githubUrl: "https://github.com/alexjohnson/task-manager",
-    liveUrl: "https://taskflow-app.vercel.app",
-    featured: true,
-  },
-  {
-    title: "Weather Dashboard",
-    description:
-      "A responsive weather application that provides detailed forecasts, interactive maps, and location-based weather alerts. Features beautiful data visualizations and offline support.",
-    image: "/preview/project4.png",
-    technologies: ["React", "Chart.js", "OpenWeather API", "PWA"],
-    githubUrl: "https://github.com/alexjohnson/weather-dashboard",
-    liveUrl: "https://weather-pro.vercel.app",
+    technologies: ["ReactJs", "Express", "MongoDB","NodeJs"],
+    githubUrl: "https://github.com/Rizwanali02/Blog-App",
+    liveUrl: "https://taskflow-app.vercel.apphttps://blog-app-ivory-iota.vercel.app/",
     featured: false,
   },
-  {
-    title: "Social Media Analytics",
-    description:
-      "A comprehensive analytics platform for social media managers, featuring engagement tracking, content scheduling, and performance insights across multiple platforms.",
-    image: "/social-media-analytics-dashboard.png",
-    technologies: ["Next.js", "TypeScript", "Prisma", "TailwindCSS"],
-    githubUrl: "https://github.com/alexjohnson/social-analytics",
-    liveUrl: "https://social-insights.vercel.app",
-    featured: false,
-  },
+  
 ]
 
 export default function Projects() {
@@ -144,7 +145,7 @@ export default function Projects() {
                   </div>
                 </div>
 
-                <div className={`${project.featured ? "md:w-1/2" : ""}`}>
+                <div className={`${project.featured ? "md:w-1/2" : ""} mt-5` }>
                   <CardHeader>
                     <div className="flex items-start justify-between">
                       <CardTitle className="text-xl font-bold text-foreground mb-2">{project.title}</CardTitle>
@@ -190,7 +191,7 @@ export default function Projects() {
 
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com/alexjohnson" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/rizwanali02" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 mr-2" />
               View All Projects on GitHub
             </a>
